@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: #f8f8f8;
+  background-color: #f9f1f1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em 1em;
+}
+
+nav img {
+  width: 1.5em;
+}
+
+section {
+  position: relative;
+  margin: 1em auto;
+  width: 97%;
+}
+
+section img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin: 0;
+  /* position: absolute;
+  bottom: 1em;
+  left: 0.3125em; */
+  font-weight: 600;
+}
+
+section p {
+  font-size: 1rem;
+  margin: 0;
+  /* position: absolute;
+  bottom: 0.25em;
+  left: 0.55em; */
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+}
+
+footer div {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 1.5em;
+}
+
+footer button {
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+}
+
+button {
+  outline: none;
+  font: inherit;
+  padding: 0;
+  border: none;
+}
+
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 20%;
+  /* min-width: 20vw;
+  max-width: 30vw; */
+  height: fit-content;
+}
+
+.logo {
+  height: 1.5em;
+  width: 3em;
+}
+
+.popup {
+  position: absolute;
+  width: 10em;
+  top: 2em;
+  left: 0.5em;
+  transform: rotate(-25deg);
+}
+
+#like-btn:hover {
+  background-color: #dbfff4;
+}
+
+#dislike-btn:hover {
+  background-color: #ffe7ef;
+}
+
+#like-tag {
+  display: none;
+}
+
+#dislike-tag {
+  display: none;
+}
+
+.text-div {
+  position: absolute;
+  bottom: 0.7em;
+  left: 0.25em;
+  display: flex;
+  flex-direction: column;
+}
